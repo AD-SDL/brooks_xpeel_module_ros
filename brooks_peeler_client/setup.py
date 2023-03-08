@@ -2,7 +2,7 @@ from setuptools import setup
 import os
 from glob import glob
 
-package_name = 'peeler_module_client'
+package_name = 'brooks_peeler_client'
 
 setup(
     name=package_name,
