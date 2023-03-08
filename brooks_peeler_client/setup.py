@@ -17,14 +17,14 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='Doga Ozgulbas and decarabas',
+    maintainer='Doga Ozgulbas',
     maintainer_email='dozgulbas@anl.gov',
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'peeler_client = peeler_module_client.peeler_client:main',
+            'brooks_peeler_client = brooks_peeler_client.brooks_peeler_client:main',
         ],
     },
 )

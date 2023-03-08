@@ -3,10 +3,10 @@ from setuptools import setup, find_packages
 
 install_requires = ['pyserial']
 
-package_name = 'azenta_driver'
+package_name = 'brooks_peeler_driver'
 
 setup(
-    name='azenta_driver',
+    name='brooks_peeler_driver',
     version='0.0.1',
     packages=find_packages(),
     data_files=[
@@ -20,7 +20,7 @@ setup(
     maintainer='Rafael Vescovi and Doga Ozgulbas',
     maintainer_email='dozgulbas@anl.gov',
     description='Driver for the Azenta Sealer and Peeler',
-    url='https://github.com/AD-SDL/azenta_driver.git', 
+    url='https://github.com/AD-SDL/brooks_xpeel_module.git', 
     license='MIT License',
     entry_points={},
     classifiers=[

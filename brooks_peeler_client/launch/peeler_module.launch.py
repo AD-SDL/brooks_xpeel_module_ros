@@ -19,7 +19,7 @@ def generate_launch_description():
         )
 
     peeler=Node(
-        package='peeler_module_client',
+        package='brooks_peeler_client',
         namespace = 'std_ns',
         executable='peeler_client',
         name='PeelerNode',

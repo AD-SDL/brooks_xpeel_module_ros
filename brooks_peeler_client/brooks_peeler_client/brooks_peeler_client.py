@@ -14,7 +14,7 @@ from wei_services.srv import WeiActions, WeiDescription
 from azenta_driver.peeler_driver import BROOKS_PEELER_DRIVER  # import peeler driver
 
 
-class PeelerClient(Node):
+class BrooksPeelerClient(Node):
     """
     The peelerNode inputs data from the 'action' topic, providing a set of commands for the driver to execute. It then receives feedback,
     based on the executed command and publishes the state of the peeler and a description of the peeler to the respective topics.
@@ -259,7 +259,7 @@ def main(args=None):  # noqa: D103
     rclpy.init(args=args)       # initialize Ros2 communication
 
     try:
-        peeler_client = PeelerClient()
+        peeler_client = BrooksPeelerClient()
         executor = MultiThreadedExecutor()
         executor.add_node(peeler_client)
 
