@@ -21,7 +21,7 @@ def generate_launch_description():
     peeler=Node(
         package='brooks_peeler_client',
         namespace = 'std_ns',
-        executable='peeler_client',
+        executable='brooks_peeler_client',
         name='PeelerNode',
         parameters = [{"peeler_port":peeler_port}],
         emulate_tty=True
