@@ -11,7 +11,7 @@ from std_msgs.msg import String
 
 from wei_services.srv import WeiActions, WeiDescription
 
-from azenta_driver.peeler_driver import BROOKS_PEELER_DRIVER  # import peeler driver
+from brooks_peeler_driver.brooks_peeler_driver import BROOKS_PEELER_DRIVER  # import peeler driver
 
 
 class BrooksPeelerClient(Node):
