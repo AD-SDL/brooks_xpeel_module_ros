@@ -2,7 +2,7 @@ from setuptools import setup
 import os
 from glob import glob
 
-package_name = 'azenta_description'
+package_name = 'brooks_peeler_description'
 
 setup(
     name=package_name,
@@ -27,9 +27,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'azenta_description_client = azenta_description.azenta_description_client:main',
-            'sealer_description_client = azenta_description.sealer_description_client:main',
-            'peeler_description_client = azenta_description.peeler_description_client:main'
+            'brooks_peeler_description = brooks_peeler_description.brooks_peeler_description:main',
         ],
     },
 )

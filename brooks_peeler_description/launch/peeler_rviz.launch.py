@@ -80,8 +80,8 @@ def generate_launch_description():
   # Start RealHarware Joint State Publisher Client
   start_peeler_description_client = Node(
     condition=UnlessCondition(fake_hardware),
-    package = "azenta_description",
-    executable = 'peeler_description_client',
+    package = "brooks_peeler_description",
+    executable = 'brooks_peeler_description',
     name = 'PeelerDescriptionNode',
     output = 'screen'
   )
