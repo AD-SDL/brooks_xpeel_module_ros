@@ -81,7 +81,7 @@ def generate_launch_description():
   start_peeler_description_client = Node(
     condition=UnlessCondition(fake_hardware),
     package = "brooks_peeler_description",
-    executable = 'brooks_peeler_description',
+    executable = 'brooks_peeler_description_client',
     name = 'PeelerDescriptionNode',
     output = 'screen'
   )

@@ -27,7 +27,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'brooks_peeler_description = brooks_peeler_description.brooks_peeler_description:main',
+            'brooks_peeler_description = brooks_peeler_description.brooks_peeler_description_client:main',
         ],
     },
 )
