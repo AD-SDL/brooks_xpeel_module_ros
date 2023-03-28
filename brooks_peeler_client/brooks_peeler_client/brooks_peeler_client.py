@@ -1,8 +1,8 @@
 #! /usr/bin/env python3
-"""Peeler node"""
 
 from typing import List, Tuple
 from time import sleep
+
 import rclpy  # import Rospy
 from rclpy.node import Node  # import Rospy Node
 from rclpy.callback_groups import MutuallyExclusiveCallbackGroup, ReentrantCallbackGroup
