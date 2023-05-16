@@ -52,6 +52,7 @@ class BROOKS_PEELER_DRIVER():
         while time.time() - response_timer < time_wait: 
             if self.connection.in_waiting != 0:           
                 response = self.connection.read_until(expected=b'\r')
+                print(response)
                 response_string = response.decode('utf-8')
                 break
             else:
@@ -388,7 +389,9 @@ if __name__ == "__main__":
     #     time.sleep(1)
     # print(peeler.peeler_output)
         # print(peeler.error_msg)
-    peeler.reset()
+    peeler.get_status()
+    print(peeler.status_msg)
+
     # print(peeler.peel(1,2.5))
     # print(peeler.get_status())
 
