@@ -14,7 +14,7 @@ This package guides a user to install python and ROS2 packages that remotely con
 1. ### Create a workspace
 - `cd ~`
 <!-- - `source /opt/ros/foxy/setup.bash` -->
-- Create a WEI workspace it doesn't exist already
+- Create a WEI workspace if it doesn't exist already
 - `mkdir -p ~/wei_ws/src`
 
 2. ### Git Clone brooks_xpeel_module repository
