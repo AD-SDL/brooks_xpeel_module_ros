@@ -37,14 +37,14 @@ This package guides a user to install python and ROS2 packages that remotely con
 4. ### Install Brooks Peeler Client
 - `cd ~/wei_ws`
 - `colcon build`
-- `source install/setep.bash`
+- `source install/setup.bash`
 
 5. ### ROS2 Launch
 
 Launching the peeler client
 
- - `ros2 launch peeler_module_client peeler_module.launch.py`
- - Port name can be specified as `ros2 launch peeler_module_client peeler_module.launch.py peeler_port:=/dev/ttyUSB0`
+ - `ros2 launch brooks_peeler_client brooks_peeler_client.launch.py`
+ - Port name can be specified as `ros2 launch brooks_peeler_client brooks_peeler_client.launch.py peeler_port:=/dev/ttyUSB0`
 
 
 6. ### Sending commands to XPeel using the Driver only:
