@@ -21,15 +21,22 @@ This package guides a user to install python and ROS2 packages that remotely con
 - `cd ~/wei_ws/src`
 - `git clone https://github.com/AD-SDL/brooks_xpeel_module.git`
 
-2. ### Launching azenta driver on personal device
+3. ### Install Brooks Peeler Driver
+    #### Creating a conda/venv environment.
+    - `conda create -n peeler-driver python=3.9`
+    - `conda activate peeler-driver`
 
-   In terminal:
+    #### Python Install 
+    - `cd ~/wei_ws/src/brooks_xpeel_module/brooks_peeler_driver`
+    - `pip install -r requirements.txt`
+    - `pip install -e .`
 
-        cd <azenta_driver location>
-        cd azenta_driver
-        touch __init__.py
-        cd ..
-        python setup.py
+    This installs brooks_peeler_driver as a package
+4. ### Install Brooks Peeler Client
+- `cd ~/wei_ws`
+- `colcon build`
+- `source install/setep.bash`
+
 
 3. ### Sending commands to XPeel:
 	* Connect XPeel Driver to device with a serial to usb cable.
@@ -41,8 +48,6 @@ This package guides a user to install python and ROS2 packages that remotely con
 		peeler = BROOKS_PEELER_CLIENT(port)
 
 	* Send commands (provided below)
-### Python Install 
-### ROS2 Workspace Setup 
 
 ### ROS2 Launch
 
