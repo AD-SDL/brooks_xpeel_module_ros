@@ -38,14 +38,14 @@ This package guides a user to install python and ROS2 packages that remotely con
 - `source install/setep.bash`
 
 
-3. ### Sending commands to XPeel:
+3. ### Sending commands to XPeel using the Driver only:
 	* Connect XPeel Driver to device with a serial to usb cable.
 	* Find XPeel port ex: "/dev/ttyUSB0" 
 
    	In Python:
     
-		from azenta_driver.peeler_client import BROOKS_PEELER_CLIENT
-		peeler = BROOKS_PEELER_CLIENT(port)
+    - `from brooks_peeler_driver.brooks_peeler_driver import BROOKS_PEELER_DRIVER  # import peeler driver`
+    - `peeler = BROOKS_PEELER_DRIVER(port)`
 
 	* Send commands (provided below)
 
