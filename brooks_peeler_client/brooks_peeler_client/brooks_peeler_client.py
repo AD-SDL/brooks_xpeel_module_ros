@@ -1,13 +1,14 @@
 #! /usr/bin/env python3
 """Peeler node"""
 
-from typing import List, Tuple
-from time import sleep
 import rclpy  # import Rospy
 from rclpy.node import Node  # import Rospy Node
 from rclpy.callback_groups import MutuallyExclusiveCallbackGroup, ReentrantCallbackGroup
 from rclpy.executors import MultiThreadedExecutor, SingleThreadedExecutor
 from std_msgs.msg import String
+
+from time import sleep
+import json
 
 from wei_services.srv import WeiActions, WeiDescription
 
@@ -192,7 +193,7 @@ class BrooksPeelerClient(Node):
             sleep(0.2)
 
         action_handle = request.action_handle  # Run commands if manager sends corresponding command
-        vars = eval(request.vars)
+        vars = json.loads(request.vars)
         self.get_logger().info(str(vars))
         
         self.action_flag = "BUSY"
